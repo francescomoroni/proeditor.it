@@ -28,7 +28,7 @@ export function Servizi1() {
               size="lg"
               className="bg-buttons-primary hover:bg-buttons-primary/80 text-white px-8"
             >
-              Scopri Di Più
+              <a href="/#contact-form">Scopri Di Più</a>
             </Button>
           </div>
 

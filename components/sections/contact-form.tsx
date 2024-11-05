@@ -55,7 +55,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="py-16 bg-secondary/10">
+    <section id="contact-form" className="py-16 bg-secondary/10">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <form onSubmit={handleSubmit} className="space-y-6">

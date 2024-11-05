@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Servizi0() {
   return (
-    <section className="bg-gray-50 py-4">
+    <section className="bg-buttons-primary/30 py-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Content Column */}
@@ -39,7 +39,7 @@ export function Servizi0() {
               size="lg"
               className="bg-buttons-primary hover:bg-buttons-primary/80 text-white px-8"
             >
-              Scopri Di Più
+              <a href="/#contact-form">Scopri Di Più</a>
             </Button>
           </div>
 

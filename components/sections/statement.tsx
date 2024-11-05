@@ -1,6 +1,6 @@
 export function Statement() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-buttons-primary/30">
       <div className="container max-w-4xl mx-auto px-4">
         <div className="text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
