@@ -1,5 +1,4 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { format } from "date-fns"
 import Image from "next/image"
 
@@ -19,7 +18,8 @@ export function ArticleCard({
   slug 
 }: ArticleCardProps) {
   return (
-    <Card className="group overflow-hidden transition-all hover:shadow-lg">
+    <a href={`/articoli/${slug}`}>
+    <Card className="group overflow-hidden transition-all hover:shadow-lg cursor-pointer">
       <div className="aspect-video relative overflow-hidden">
         <Image 
           src={coverImage}
@@ -43,10 +43,9 @@ export function ArticleCard({
         <time className="text-sm text-muted-foreground">
           {format(publishedAt, 'dd MMM yyyy')}
         </time>
-        <Button variant="secondary" asChild>
-          <a href={`/articoli/${slug}`}>Leggi di più</a>
-        </Button>
+
       </CardFooter>
     </Card>
+    </a>
   )
 } 
