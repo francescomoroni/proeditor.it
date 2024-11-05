@@ -7,8 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'buttons-primary': '#60a5fa',
+      },
       animation: {
-        marquee: 'marquee 25s linear infinite',
+        marquee: 'marquee 15s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -16,9 +19,12 @@ module.exports = {
           '100%': { transform: 'translateX(100%)' },
         },
       },
+      fontFamily: {
+        'firma-corsivo': ['Alex Brush', 'cursive'],
+      },
     },
   },
   plugins: [
-    import('@tailwindcss/typography'),
+    require('@tailwindcss/typography'),
   ],
 } 

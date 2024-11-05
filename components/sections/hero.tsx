@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { useState } from "react"
-import { Volume2, VolumeX } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Volume2, VolumeX } from "lucide-react";
 
 export function Hero() {
-  const [isMuted, setIsMuted] = useState(true)
+  const [isMuted, setIsMuted] = useState(true);
 
   return (
     <div className="relative h-[80vh] overflow-hidden">
@@ -30,7 +30,10 @@ export function Hero() {
         <p className="text-xl md:text-2xl text-center mb-8 max-w-2xl">
           Trasformiamo le tue parole in opere d&apos;arte letterarie
         </p>
-        <Button size="lg" className="text-lg px-8">
+        <Button
+          size="lg"
+          className="text-lg bg-buttons-primary hover:bg-buttons-primary/80 text-white px-8"
+        >
           Inizia il Tuo Viaggio
         </Button>
 
@@ -48,5 +51,5 @@ export function Hero() {
         </button>
       </div>
     </div>
-  )
-} 
+  );
+}

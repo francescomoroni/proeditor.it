@@ -25,14 +25,14 @@ export default function ArticlesPage() {
       excerpt: "Scopri le tecniche più efficaci per promuovere il tuo libro in modo indipendente. Dal social media marketing alle recensioni, tutto quello che devi sapere per aumentare le vendite.",
       coverImage: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32",
       publishedAt: new Date("2024-03-10"),
-      slug: "strategie-marketing-autori-self-published"
+      slug: "chi-sono2"
     },
     {
       title: "L'Importanza dell'Editing nel Self Publishing",
       excerpt: "Perché l'editing professionale è fondamentale per il successo del tuo libro? Analizziamo i diversi tipi di editing e come possono migliorare la qualità della tua opera.",
       coverImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a",
       publishedAt: new Date("2024-03-05"),
-      slug: "importanza-editing-self-publishing"
+      slug: "chi-sono1"
     }
   ]
 

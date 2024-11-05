@@ -20,11 +20,12 @@ export function Navbar() {
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
-              alt="Logo Casa Editrice"
+              alt="Logo Casa Editrice ProEditors"
               width={150}
               height={40}
-              className="h-10 w-auto"
+              // className="h-10 w-auto"
             />
+            <h1 className="text-2xl font-bold">Pro Editors - Editori per passione</h1>
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,7 +34,7 @@ export function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium hover:text-primary"
+                className="text-xl font-medium hover:text-buttons-primary transition-colors"
               >
                 {item.name}
               </Link>

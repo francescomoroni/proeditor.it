@@ -32,9 +32,10 @@ export function ArticleDetail({ title, content, coverImage, publishedAt }: Artic
         </div>
 
         {/* Content */}
-        <div className="prose prose-lg max-w-none">
-          {content}
-        </div>
+        <div 
+          className="prose prose-lg max-w-none"
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
       </div>
     </article>
   )
