@@ -1,4 +1,5 @@
 import { ArticleDetail } from "@/components/articles/ArticleDetail";
+import { ContactForm } from "@/components/sections/contact-form";
 import { notFound } from "next/navigation";
 
 // Questa funzione simula il recupero di un articolo dal database
@@ -896,6 +897,7 @@ export default async function ArticlePage({
       <div className="container py-10 mx-auto px-4">
         <ArticleDetail {...article} />
       </div>
+      <ContactForm />
     </>
   );
 }

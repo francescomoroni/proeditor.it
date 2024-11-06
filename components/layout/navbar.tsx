@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Image from "next/image";
@@ -8,14 +7,14 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "I nostri servizi", href: "/servizi" },
+  { name: "Portfolio", href: "/#portfolio" },
   { name: "Articoli", href: "/articoli" },
 ];
 
 export function Navbar() {
   return (
     <nav className="border-b">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 ">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
@@ -44,9 +43,7 @@ export function Navbar() {
           {/* Mobile Navigation */}
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon">
                 <Menu />
-              </Button>
             </SheetTrigger>
             <SheetContent>
               <div className="flex flex-col space-y-4 mt-8 ">

@@ -60,7 +60,7 @@ export default function ArticlesPage() {
   return (
     <main className="min-h-screen">
       <ArticlesHero
-        backgroundImage="/images/blog-hero.jpg"
+        backgroundImage="/articles/hero.jpg"
         title="Articoli"
         subtitle="Scopri i nostri articoli e guide sul Self Publishing"
       />

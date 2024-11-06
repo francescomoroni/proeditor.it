@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/footer";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Casa Editrice 3.0",
+  title: "Pro Editors",
   description: "La prima casa editrice 3.0 in Italia",
 }
 

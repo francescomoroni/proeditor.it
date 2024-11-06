@@ -15,6 +15,8 @@ export function ArticlesHero({ backgroundImage, title, subtitle }: ArticlesHeroP
       >
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
       </div>
+
+      
       
       {/* Hero Content */}
       <div className="relative flex h-full flex-col items-center justify-center px-4 text-center">

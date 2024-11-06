@@ -4,18 +4,21 @@ import { Button } from "@/components/ui/button";
 export function Servizi1() {
   return (
     <section className="bg-gray-50 py-4">
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-4 sm:pt-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Content Column */}
           <div className="space-y-6 px-4">
-            <h2 className="text-4xl font-bold tracking-tight">
-              Scriviamo per te!
+            <h2 className="text-4xl font-bold tracking-tight text-center">
+              Scriviamo per te
             </h2>
             <div className="text-gray-600 text-justify space-y-4">
               <p>
                 Hai un&apos;idea rivoluzionaria, ma non hai tempo da dedicare
-                alla scrittura? Hai una storia che merita di essere raccontata,
-                ma scrivere non è il tuo forte?
+                alla scrittura?
+              </p>
+              <p>
+                Hai una storia che merita di essere raccontata, ma scrivere non
+                è il tuo forte?
               </p>
               <p>
                 Nessun problema. Il nostro servizio di ghostwriting metterà a
@@ -26,7 +29,7 @@ export function Servizi1() {
             </div>
             <Button
               size="lg"
-              className="bg-buttons-primary hover:bg-buttons-primary/80 text-white px-8"
+              className="bg-buttons-primary hover:bg-buttons-primary/80 text-white px-8 flex mx-auto"
             >
               <a href="/#contact-form">Scopri Di Più</a>
             </Button>

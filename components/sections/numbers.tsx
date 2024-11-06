@@ -7,29 +7,29 @@ interface StatItem {
 export function Numbers() {
   const stats: StatItem[] = [
     {
-      icon: "👍",
-      value: "+115.000",
-      label: "Follower",
+      icon: "📚",
+      value: "+100.000",
+      label: "Libri venduti",
     },
     {
       icon: "✍️",
-      value: "+15.000",
-      label: "Autori",
+      value: "+20",
+      label: "Autori internazionali",
     },
     {
       icon: "👥",
-      value: "+22.000",
+      value: "+100",
       label: "Clienti Soddisfatti",
     },
     {
-      icon: "👍",
-      value: "+115.000",
-      label: "Follower",
+      icon: "👨‍💻",
+      value: "+50",
+      label: "Autori",
     },
     {
       icon: "🏆",
-      value: "+2000",
-      label: "Best Seller",
+      value: "+10",
+      label: "Best Seller su Amazon",
     },
     {
       icon: "🌐",
@@ -37,9 +37,9 @@ export function Numbers() {
       label: "Paesi Raggiunti",
     },
     {
-      icon: "🚀",
-      value: "+3000",
-      label: "Brand Rafforzati",
+      icon: "💬",
+      value: "+100",
+      label: "Consulenze",
     },
   ];
 
@@ -47,7 +47,7 @@ export function Numbers() {
     <section className="py-16 bg-white px-2">
       <div className="container mx-auto">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-4xl font-bold tracking-tight">
+          <h2 className="text-4xl font-bold tracking-tight text-center">
             Raggiungi milioni di persone con il potere delle tue parole.
           </h2>
           <p className="text-2xl text-buttons-primary font-medium">
