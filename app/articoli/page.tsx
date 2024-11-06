@@ -18,7 +18,7 @@ export default function ArticlesPage() {
       excerpt: `Pubblicare un libro non è solo una grande soddisfazione personale: è anche un potente strumento per costruire credibilità e distinguersi come esperto nel proprio settore. Se sei un professionista, un imprenditore o un leader, scrivere un libro può trasformarsi nella tua arma segreta per guadagnare autorevolezza e conquistare la fiducia di clienti, colleghi e concorrenti.`,
       coverImage: "/articles/1_marketing.png",
       publishedAt: new Date("2024-03-15"),
-      slug: "Come-un-libro-potenzierà-il-tuo-business",
+      slug: "Come-un-libro-potenziera-il-tuo-business",
     },
     {
       title: "Come pubblicare un libro su Amazon",

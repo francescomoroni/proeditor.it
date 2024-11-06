@@ -6,7 +6,7 @@ async function getArticle(slug: string) {
   // console.log(`Fetching article with slug: ${slug}`);
   const articles = [
     {
-      slug: "Come-un-libro-potenzierà-il-tuo-business",
+      slug: "Come-un-libro-potenziera-il-tuo-business",
       title: "Come un libro potenzierà il tuo business",
       content: `<p><b><span>Come Scrivere un Libro Può Aiutarti a
 			Diventare un&apos;Autorità nel Tuo Settore</span></b></p>

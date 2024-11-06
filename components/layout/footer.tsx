@@ -31,10 +31,8 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Link Utili</h3>
             <ul className="space-y-2">
-              <li><Link href="/chi-siamo" className="hover:opacity-80">Chi Siamo</Link></li>
-              <li><Link href="/servizi" className="hover:opacity-80">Servizi</Link></li>
-              <li><Link href="/blog" className="hover:opacity-80">Blog</Link></li>
-              <li><Link href="/contatti" className="hover:opacity-80">Contatti</Link></li>
+              <li><Link href="/#contact-form" className="hover:opacity-80">Servizi</Link></li>
+              <li><Link href="/articoli" className="hover:opacity-80">Blog</Link></li>
             </ul>
           </div>
 
@@ -58,15 +56,15 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Informazioni Legali</h3>
             <ul className="space-y-2">
-              <li><Link href="/privacy" className="hover:opacity-80">Privacy Policy</Link></li>
+              {/* <li><Link href="/privacy" className="hover:opacity-80">Privacy Policy</Link></li> */}
               <li><Link href="/cookie" className="hover:opacity-80">Cookie Policy</Link></li>
-              <li><Link href="/termini" className="hover:opacity-80">Termini e Condizioni</Link></li>
+              {/* <li><Link href="/termini" className="hover:opacity-80">Termini e Condizioni</Link></li> */}
             </ul>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center">
-          <p>&copy; {new Date().getFullYear()} Casa Editrice 3.0. Tutti i diritti riservati.</p>
+          <p>&copy; {new Date().getFullYear()} Pro Editors. Tutti i diritti riservati.</p>
         </div>
       </div>
     </footer>

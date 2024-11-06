@@ -25,7 +25,7 @@ export function Navbar() {
               height={40}
               // className="h-10 w-auto"
             />
-            <h1 className="text-2xl font-bold">Pro Editors - Editori per passione</h1>
+            <h1 className="text-2xl font-bold">Pro Editors</h1>
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,19 +45,19 @@ export function Navbar() {
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+                <Menu />
               </Button>
             </SheetTrigger>
             <SheetContent>
-              <div className="flex flex-col space-y-4 mt-8">
+              <div className="flex flex-col space-y-4 mt-8 ">
                 {navigation.map((item) => (
-                  <Link
+                  <a
                     key={item.name}
                     href={item.href}
                     className="text-lg font-medium hover:text-primary"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </SheetContent>
