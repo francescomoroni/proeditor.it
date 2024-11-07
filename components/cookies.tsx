@@ -41,11 +41,11 @@ export default function Cookies({
                   <p className="text-xs text-justify sm:text-sm">
                     Questo sito web e gli strumenti di terze parti su questo
                     sito utilizzano cookies necessari al corretto funzionamento
-                    dell&apos;esperienza di navigazione. Per ulteriori informazioni
-                    dettagliate sulla privacy policy, ti invitiamo a visitare la
-                    nostra pagina al link sottostante. Chiudendo questo
-                    banner, scorrendo la pagina web, cliccando su un link o
-                    navigando il sito in qualsiasi altro modo, dai il tuo
+                    dell&apos;esperienza di navigazione. Per ulteriori
+                    informazioni dettagliate sulla privacy policy, ti invitiamo
+                    a visitare la nostra pagina al link sottostante. Chiudendo
+                    questo banner, scorrendo la pagina web, cliccando su un link
+                    o navigando il sito in qualsiasi altro modo, dai il tuo
                     consenso alla nostra politica sui cookie.
                   </p>
                   <div className="items-center justify-between sm:flex">
@@ -54,15 +54,25 @@ export default function Cookies({
                         Dettagli
                       </p>
                     </Link>
-                    <p
-                      onClick={() => {
-                        setOpen(false);
-                        localStorage.setItem("cookies", "true");
-                      }}
-                      className="px-4 py-1 mt-4 text-center text-white bg-black rounded-md cursor-pointer sm:mt-0 hover:underline"
-                    >
-                      ACCETTO
-                    </p>
+                    <div className="flex space-x-2 justify-end">
+                      <p
+                        onClick={() => {
+                          setOpen(false);
+                        }}
+                        className="px-4 py-1 mt-4 text-center text-white bg-black rounded-md cursor-pointer sm:mt-0 hover:underline"
+                      >
+                        Rifiuta
+                      </p>
+                      <p
+                        onClick={() => {
+                          setOpen(false);
+                          localStorage.setItem("cookies", "true");
+                        }}
+                        className="px-4 py-1 mt-4 text-center text-white bg-black rounded-md cursor-pointer sm:mt-0 hover:underline"
+                      >
+                        Accetta
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Dialog.Panel>

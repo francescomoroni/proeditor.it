@@ -19,9 +19,9 @@ module.exports = {
           '100%': { transform: 'translateX(100%)' },
         },
       },
-      fontFamily: {
-        'firma-corsivo': ['Alex Brush', 'cursive'],
-      },
+    },
+    fontFamily: {
+      Dancing: ["Dancing Script", "cursive"],
     },
   },
   plugins: [

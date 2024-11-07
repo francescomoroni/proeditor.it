@@ -8,7 +8,7 @@ export function Statement() {
           </h2>
 
           <p className="text-xl text-buttons-primary font-medium uppercase tracking-wide">
-            Leader nel settore
+            Leader nel settore dal 2019
           </p>
 
           <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
@@ -22,7 +22,7 @@ export function Statement() {
           </p>
 
           <div
-            className="text-3xl md:text-4xl font-firma-corsivo text-gray-800 mt-8 transform -rotate-3"
+            className="text-3xl md:text-4xl font-Dancing italic font-medium text-gray-800 mt-8 transform -rotate-3"
           >
             Pro Editors
           </div>
