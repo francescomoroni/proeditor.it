@@ -21,11 +21,11 @@ export function Numbers() {
       value: "+100",
       label: "Clienti Soddisfatti",
     },
-    {
-      icon: "👨‍💻",
-      value: "+50",
-      label: "Autori",
-    },
+    // {
+    //   icon: "👨‍💻",
+    //   value: "+50",
+    //   label: "Autori",
+    // },
     {
       icon: "🏆",
       value: "+10",
@@ -44,7 +44,7 @@ export function Numbers() {
   ];
 
   return (
-    <section className="py-16 bg-white px-2">
+    <section className="py-16  px-2">
       <div className="container mx-auto">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl font-bold tracking-tight text-center">
@@ -56,7 +56,7 @@ export function Numbers() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 justify-items-center text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center text-center">
           {stats.map((stat, index) => (
             <div key={index} className="space-y-2">
               <div className="text-buttons-primary text-3xl">{stat.icon}</div>

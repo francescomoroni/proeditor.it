@@ -24,7 +24,7 @@ export function TopBar() {
         </div>
         <div className="flex items-center space-x-2">
           <a
-            href="https://instagram.com/proeditors"
+            href="https://instagram.com/proeditorsmilan"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary-foreground/80"

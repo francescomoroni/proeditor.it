@@ -15,6 +15,7 @@ import { ContactForm } from "@/components/sections/contact-form";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Portfolio } from "@/components/sections/portfolio";
+import { AnnouncementBar2 } from "@/components/sections/announcement-bar2";
 
 export default function Home() {
   const [cookiesOpen, setCookiesOpen] = useState(false);
@@ -31,6 +32,7 @@ export default function Home() {
       <AnnouncementBar />
       <Hero />
       <Numbers />
+      <AnnouncementBar2 />
       <Servizi0 />
       <Servizi1 />
       <Servizi2 />

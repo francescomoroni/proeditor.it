@@ -1,52 +1,19 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+
+import { Servizi } from "./servizi";
 
 export function Servizi1() {
   return (
-    <section className="bg-gray-50 py-4">
-      <div className="container mx-auto pt-4 sm:pt-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Content Column */}
-          <div className="space-y-6 px-4">
-            <h2 className="text-4xl font-bold tracking-tight text-center">
-              Scriviamo per te
-            </h2>
-            <div className="text-gray-600 text-justify space-y-4">
-              <p>
-                Hai un&apos;idea rivoluzionaria, ma non hai tempo da dedicare
-                alla scrittura?
-              </p>
-              <p>
-                Hai una storia che merita di essere raccontata, ma scrivere non
-                è il tuo forte?
-              </p>
-              <p>
-                Nessun problema. Il nostro servizio di ghostwriting metterà a
-                tua disposizione uno professionista che scriverà il tuo best
-                seller al posto tuo, seguendo le tue indicazioni passo dopo
-                passo.
-              </p>
-            </div>
-            <Button
-              size="lg"
-              className="bg-buttons-primary hover:bg-buttons-primary/80 text-white px-8 flex mx-auto"
-            >
-              <a href="/#contact-form">Scopri Di Più</a>
-            </Button>
-          </div>
-
-          {/* Image Column */}
-          <div className="relative h-[500px] w-full">
-            <Image
-              src="/assets/homepage/servizi1.png" // Assicurati di avere questa immagine nella cartella public
-              alt="La Tua Opera - Copertina libro"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+    <Servizi
+      title="Scriviamo per te"
+      content={[
+        "Hai un'idea rivoluzionaria, ma non hai tempo da dedicare alla scrittura?",
+        "Hai una storia che merita di essere raccontata, ma scrivere non è il tuo forte?",
+        "Nessun problema. Il nostro servizio di ghostwriting metterà a tua disposizione uno professionista che scriverà il tuo best seller al posto tuo, seguendo le tue indicazioni passo dopo passo.",
+      ]}
+      imageSrc="/assets/homepage/servizi1.png"
+      buttonText="Richiedi una consulenza gratuita"
+      buttonLink="/#contact-form"
+      isTextToLeftSideOfCard={false}
+    />
   );
 }

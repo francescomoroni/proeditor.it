@@ -1,7 +1,6 @@
-
-'use client'
-import { Instagram, Facebook, Mail, MapPin } from "lucide-react"
-import Link from "next/link"
+"use client";
+import { Instagram, Facebook, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -16,7 +15,10 @@ export function Footer() {
                 <Phone className="h-4 w-4" />
                 <span>+39 012 345 6789</span>
               </a> */}
-              <a href="mailto:info@casaeditrice.it" className="flex items-center space-x-2 hover:opacity-80">
+              <a
+                href="mailto:info@casaeditrice.it"
+                className="flex items-center space-x-2 hover:opacity-80"
+              >
                 <Mail className="h-4 w-4" />
                 <span>info@proeditors.it</span>
               </a>
@@ -31,8 +33,16 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Link Utili</h3>
             <ul className="space-y-2">
-              <li><Link href="/#portfolio" className="hover:opacity-80">Portfolio</Link></li>
-              <li><Link href="/articoli" className="hover:opacity-80">Articoli</Link></li>
+              <li>
+                <Link href="/#portfolio" className="hover:opacity-80">
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link href="/articoli" className="hover:opacity-80">
+                  Articoli
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -40,10 +50,22 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Social</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:opacity-80" aria-label="Instagram">
+              <a
+                href="https://instagram.com/proeditorsmilan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+                aria-label="Instagram"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:opacity-80" aria-label="Facebook">
+              <a
+                href="https://facebook.com/proeditorsmilano"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+                aria-label="Facebook"
+              >
                 <Facebook className="h-6 w-6" />
               </a>
               {/* <a href="#" className="hover:opacity-80" aria-label="Twitter">
@@ -57,17 +79,24 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Informazioni Legali</h3>
             <ul className="space-y-2">
               {/* <li><Link href="/privacy" className="hover:opacity-80">Privacy Policy</Link></li> */}
-              <li><Link href="/privacy-policy" className="hover:opacity-80">Cookie & Privacy Policy</Link></li>
+              <li>
+                <Link href="/privacy-policy" className="hover:opacity-80">
+                  Cookie & Privacy Policy
+                </Link>
+              </li>
               {/* <li><Link href="/termini" className="hover:opacity-80">Termini e Condizioni</Link></li> */}
             </ul>
           </div>
         </div>
 
         <div className="mt-8 pt-4 border-t border-primary-foreground/20 text-center">
-          <p>&copy; {new Date().getFullYear()} Pro Editors. Tutti i diritti riservati.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Pro Editors. Tutti i diritti
+            riservati.
+          </p>
           <p>P.Iva 13294140560</p>
         </div>
       </div>
     </footer>
-  )
-} 
+  );
+}
