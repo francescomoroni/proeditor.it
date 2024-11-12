@@ -40,16 +40,16 @@ export function Hero() {
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Contenuto */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-white mx-auto px-4 space-y-20">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-white mx-auto px-4 space-y-32">
         <h1 className="text-4xl md:text-6xl font-bold text-center">
           Il tuo libro chiavi in mano pronto per il grande pubblico
         </h1>
         <p className="text-xl md:text-4xl text-center ">
           La tua storia merita di essere raccontata
         </p>
-        <p className="text-xl md:text-4xl text-center ">
+        {/* <p className="text-xl md:text-4xl text-center ">
           Trasformiamo le tue parole in opere d&apos;arte
-        </p>
+        </p> */}
         {/* 
         <Button
           size="lg"

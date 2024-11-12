@@ -1,4 +1,5 @@
-<p><b>Privacy Policy</b></p>
+export default function PolicyPage() {
+  const content = `<h1><b>Privacy Policy</b></h1>
 
 <p><b>Privacy policy pursuant to Articles 13 and 14 GDPR</b></p>
 
@@ -296,7 +297,7 @@
     rights mentioned above.</p>
 
 <p>Please check this page periodically. Version updated as of
-    30 August 2022.</p>
+    1 November 2024.</p>
 
 <p><b>Cookie policy</b></p>
 
@@ -404,3 +405,13 @@
 <p>COOKIES USED:</p>
 
 <p>TECHNICAL - STRICTLY NECESSARY</p>
+`;
+  return (
+    <main className="min-h-screen container mx-auto px-6 py-4">
+      <div
+        className="prose prose-lg max-w-none "
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    </main>
+  );
+}

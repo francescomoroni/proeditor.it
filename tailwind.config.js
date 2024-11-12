@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'buttons-primary': '#60a5fa',
+        // 'buttons-primary': '#60a5fa',
+        'buttons-primary': '#4f46e5',
       },
       animation: {
         marquee: 'marquee 15s linear infinite',

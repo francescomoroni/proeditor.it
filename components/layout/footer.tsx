@@ -78,10 +78,10 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Informazioni Legali</h3>
             <ul className="space-y-2">
-              {/* <li><Link href="/privacy" className="hover:opacity-80">Privacy Policy</Link></li> */}
+              <li><Link href="/cookie-policy" className="hover:opacity-80">Cookie Policy</Link></li>
               <li>
                 <Link href="/privacy-policy" className="hover:opacity-80">
-                  Cookie & Privacy Policy
+                  Privacy Policy
                 </Link>
               </li>
               {/* <li><Link href="/termini" className="hover:opacity-80">Termini e Condizioni</Link></li> */}
