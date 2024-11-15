@@ -82,7 +82,7 @@ export function ContactForm() {
               </label>
             </div>
 
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button type="submit" className="w-full text-white" disabled={isLoading}>
               {isLoading ? "Invio in corso..." : "Invia Messaggio"}
             </Button>
           </form>
