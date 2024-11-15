@@ -5,13 +5,12 @@ import Image from 'next/image';
 export function Hero() {
   return (
     <div className="relative h-[80vh] overflow-hidden">
-      {/* Placeholder Image using Next.js Image component */}
       <Image
-        src="/assets/homepage/hero_books_img.mp4"
+        src="/assets/homepage/hero_books_img.jpg"
         alt="Hero Image"
         layout="fill"
-        className="absolute inset-0 object-cover"
-        priority // Load the image with high priority
+        className="absolute inset-0 object-cover w-full h-full"
+        priority 
         onLoadingComplete={() => {
           // Hide the image when it has loaded
           const videoElement = document.querySelector('video');
@@ -53,7 +52,7 @@ export function Hero() {
         {/* 
         <Button
           size="lg"
-          className="text-lg bg-buttons-primary hover:bg-buttons-primary/80 text-white px-8"
+          className="text-lg bg-primary hover:bg-primary/80 text-white px-8"
         >
           Inizia il Tuo Viaggio
         </Button> */}

@@ -1,3 +1,4 @@
+import { type Metadata } from 'next'
 import { ArticlesHero } from "@/components/articles/ArticlesHero";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 
@@ -74,4 +75,10 @@ export default function ArticlesPage() {
       </section>
     </main>
   );
+}
+
+export const metadata: Metadata = {
+  title: 'Articoli',
+  description:
+    'Scopri i nostri articoli e guide sul Self Publishing',
 }

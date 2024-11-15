@@ -4,7 +4,7 @@ import { Mail, Instagram, Facebook } from "lucide-react";
 
 export function TopBar() {
   return (
-    <div className="bg-gray-900 text-white py-2 px-4">
+    <div className="bg-primary text-white py-2 px-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           {/* <a

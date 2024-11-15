@@ -21,7 +21,7 @@
 //           <div className="mt-10 flex items-center justify-center gap-x-6">
 //             <a
 //               href="#"
-//               className="rounded-md bg-buttons-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-buttons-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+//               className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 //             >
 //               Richiedi una consulenza gratuita
 //             </a>
@@ -34,7 +34,7 @@
 
 export function AnnouncementBar2() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900">
+    <div className="relative isolate overflow-hidden bg-primary">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">

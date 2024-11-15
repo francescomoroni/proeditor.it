@@ -93,7 +93,7 @@ export function ContactForm() {
               <h2 className="text-3xl font-bold">
                 Benvenuto nella Casa Editrice 3.0
               </h2>
-              <p className="text-xl text-buttons-primary">
+              <p className="text-xl text-primary">
                 Trasforma il tuo manoscritto in un&apos;opera pubblicata
               </p>
               <p className="text-muted-foreground">

@@ -33,7 +33,7 @@ export function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-xl font-medium hover:text-buttons-primary transition-colors"
+                className="text-xl font-medium hover:text-primary transition-colors"
               >
                 {item.name}
               </Link>

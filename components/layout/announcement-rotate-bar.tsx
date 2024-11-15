@@ -19,7 +19,7 @@ export function AnnouncementBar() {
   if (!isVisible) return null
 
   return (
-    <div className="bg-buttons-primary overflow-hidden py-2 text-white">
+    <div className="bg-primary overflow-hidden py-2 text-white">
       <div className="animate-marquee whitespace-nowrap">
         <span className="mx-4">
           Finalmente anche in Italia arriva la prima Casa Editrice 3.0
