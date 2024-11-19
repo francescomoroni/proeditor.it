@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { FadeIn } from "../style/FadeIn";
 
 export function ContactForm() {
   const { toast } = useToast();
@@ -55,59 +56,66 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact-form" className="py-16 bg-secondary/10">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-4">
-              <Input name="name" placeholder="Nome" required />
-              <Input name="email" type="email" placeholder="Email" required />
-              <Input name="phone" type="tel" placeholder="Telefono" />
-              <Textarea
-                name="message"
-                placeholder="Il tuo messaggio"
-                className="min-h-[150px]"
-                required
-              />
-            </div>
+    <FadeIn>
+      <section id="contact-form" className="py-16 bg-secondary/10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center pb-12">Contattaci</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-4">
+                <Input name="name" placeholder="Nome" required />
+                <Input name="email" type="email" placeholder="Email" required />
+                <Input name="phone" type="tel" placeholder="Telefono" />
+                <Textarea
+                  name="message"
+                  placeholder="Il tuo messaggio"
+                  className="min-h-[150px]"
+                  required
+                />
+              </div>
 
-            <div className="flex items-start space-x-2">
-              <Checkbox id="privacy" required />
-              <label
-                htmlFor="privacy"
-                className="text-sm text-muted-foreground"
+              <div className="flex items-start space-x-2">
+                <Checkbox id="privacy" required />
+                <label
+                  htmlFor="privacy"
+                  className="text-sm text-text-secondary"
+                >
+                  Acconsento al trattamento dei dati personali secondo la
+                  normativa sulla privacy
+                </label>
+              </div>
+
+              <Button
+                type="submit"
+                className="w-full text-white"
+                disabled={isLoading}
               >
-                Acconsento al trattamento dei dati personali secondo la
-                normativa sulla privacy
-              </label>
-            </div>
+                {isLoading ? "Invio in corso..." : "Invia Messaggio"}
+              </Button>
+            </form>
 
-            <Button type="submit" className="w-full text-white" disabled={isLoading}>
-              {isLoading ? "Invio in corso..." : "Invia Messaggio"}
-            </Button>
-          </form>
-
-          {/* Info Box */}
-          <Card>
-            <CardContent className="p-6 space-y-4">
-              <h2 className="text-3xl font-bold">
-                Benvenuto nella Casa Editrice 3.0
-              </h2>
-              <p className="text-xl text-primary">
-                Trasforma il tuo manoscritto in un&apos;opera pubblicata
-              </p>
-              <p className="text-muted-foreground">
-                Siamo qui per guidarti in ogni fase del processo editoriale,
-                dalla revisione alla pubblicazione.
-              </p>
-              <p className="text-muted-foreground">
-                Scrivici e verrai ricontattato al più presto da uno dei nostri
-                consulenti esperti per una consulenza completamente gratuita.
-              </p>
-            </CardContent>
-          </Card>
+            {/* Info Box */}
+            <Card className="hidden md:block">
+              <CardContent className="p-6 space-y-4">
+                <h2 className="text-3xl font-bold">
+                  Benvenuto nella Casa Editrice 3.0
+                </h2>
+                <p className="text-xl text-primary">
+                  Trasforma il tuo manoscritto in un&apos;opera pubblicata
+                </p>
+                <p className="text-primary">
+                  Siamo qui per guidarti in ogni fase del processo editoriale,
+                  dalla revisione alla pubblicazione.
+                </p>
+                <p className="text-primary">
+                  Scrivici e verrai ricontattato al più presto da uno dei nostri
+                  consulenti esperti per una consulenza completamente gratuita.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </FadeIn>
   );
 }

@@ -16,12 +16,12 @@ export function ArticleDetail({
 }: ArticleDetailProps) {
   return (
     <article className="max-w-3xl mx-auto">
-      <div className="space-y-4">
+      <div className="space-y-6">
         {/* Header */}
-        <div className="space-y-2">
+        <div className="space-y-6">
           <a
             href="/articoli"
-            className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
+            className="text-sm text-text-secondary hover:text-foreground flex items-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,10 +40,11 @@ export function ArticleDetail({
             </svg>
             Torna agli articoli
           </a>
-          <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
-          <time className="text-sm text-muted-foreground">
-            {formatDate(publishedAt)}
-          </time>
+          <h1 className="text-4xl font-bold tracking-tight pb-4">{title}</h1>
+
+        <time className="text-sm text-text-secondary">
+          {formatDate(publishedAt)}
+        </time>
         </div>
 
         {/* Cover Image */}

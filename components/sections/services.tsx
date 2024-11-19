@@ -21,7 +21,7 @@ function Section({
     <Container className="group/section [counter-increment:section]">
       <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20">
         <div className="flex justify-center">
-          <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
+          <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[45rem]">
             <StylizedImage
               {...image}
               sizes="(min-width: 1024px) 41rem, 31rem"
@@ -199,7 +199,7 @@ function Servizi2() {
 export default function Services() {
   return (
     <>
-      <div className="my-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-32 lg:space-y-32">
+      <div className="my-12 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-32 lg:space-y-32">
         <Servizi0 />
         <Servizi1 />
         <Servizi2 />

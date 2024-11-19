@@ -34,13 +34,13 @@ export function ArticleCard({
       </CardHeader>
       
       <CardContent>
-        <p className="line-clamp-3 text-sm text-muted-foreground">
+        <p className="line-clamp-3 text-sm text-text-secondary">
           {excerpt}
         </p>
       </CardContent>
       
       <CardFooter className="flex items-center justify-between">
-        <time className="text-sm text-muted-foreground">
+        <time className="text-sm text-text-secondary">
           {format(publishedAt, 'dd MMM yyyy')}
         </time>
 

@@ -35,3 +35,4 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Errore nell\'invio dell\'email' }, { status: 500 });
   }
 } 
+//mail sender o sendgrid

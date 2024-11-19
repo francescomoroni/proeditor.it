@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-white">
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Colonna 1: Contatti */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contatti</h3>
