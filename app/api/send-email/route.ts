@@ -1,5 +1,7 @@
+import dotenv from 'dotenv';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+dotenv.config();
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -15,7 +17,8 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: 'info@proeditors.it',
+      to: 'postmaster@proeditors.it',
+      // to: 'info@proeditors.it',
       subject: `Nuovo messaggio da ${name}`,
       html: `
         <h2>Nuovo messaggio dal form di contatto</h2>

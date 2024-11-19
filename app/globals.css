@@ -65,3 +65,7 @@
     text-wrap: balance;
   }
 }
+
+p {
+  @apply text-base text-text-primary leading-relaxed lg:text-lg
+}

@@ -8,10 +8,10 @@ export function AnnouncementBar3() {
           <h2 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-5xl">
             Pro Editors
           </h2>
-          <p className="mx-auto font-bold mt-6 max-w-3xl text-pretty text-lg/8 text-gray-300">
+          <p className="mx-auto font-bold mt-6 max-w-3xl text-pretty text-lg/8">
             Leader nel settore dal 2019
           </p>
-          <p className="mx-auto mt-6 max-w-5xl text-pretty text-lg/8 text-gray-300">
+          <p className="mx-auto mt-6 max-w-5xl text-pretty text-lg/8 text-text-primary/80">
             Dopo anni di esperienza nel mercato americano e inglese, abbiamo
             deciso di estendere i nostri servizi proponendo qualcosa di mai
             visto prima sul mercato Italiano. Contattaci per una consulenza
