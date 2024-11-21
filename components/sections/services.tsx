@@ -18,8 +18,9 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <Container className="group/section [counter-increment:section]">
-      <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20">
+    <Container className="group/section [counter-increment:section] relative overflow-hidden">
+      <div className="absolute inset-0 bg-cover bg-center blur-md" style={{ backgroundImage: `url(${image.src})` }} />
+      <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20 relative z-10">
         <div className="flex justify-center">
           <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[45rem]">
             <StylizedImage
@@ -152,14 +153,14 @@ function Servizi2() {
           Nel mondo digitale di oggi, avere una presenza online è fondamentale
           per distinguerti e affermarti come professionista. Con il nostro
           servizio di creazione siti web, puoi costruire una piattaforma unica e
-          accattivante che rifletta la tua identità e accresca la tua
-          visibilità.
+          accattivante che <strong className="font-bold">rifletta la tua identità e accresca la tua
+          visibilità</strong>.
         </p>
         <p className="text-text-secondary">
           Un sito ben realizzato non è solo una vetrina, ma un potente strumento
           per definire il tuo personal brand, affermarti come autorità nel tuo
-          settore e rafforzare la tua credibilità agli occhi di partner, clienti
-          e collaboratori.
+          settore e <strong className="font-bold">rafforzare la tua credibilità agli occhi di partner, clienti
+          e collaboratori</strong>.
         </p>
         <p className="text-text-secondary">
           Collaboriamo con un team di professionisti specializzati per garantire
@@ -168,7 +169,7 @@ function Servizi2() {
           meglio i tuoi valori.
         </p>
         <p className="text-text-secondary">
-          Siamo gli unici in Italia a offrirti questo servizio senza alcun costo
+          <strong className="font-bold">Siamo gli unici in Italia</strong> a offrirti questo servizio senza alcun costo
           iniziale: un&apos;opportunità esclusiva per chi vuole investire nel
           proprio futuro senza pensieri. Approfitta della nostra offerta unica,
           valida fino a esaurimento disponibilità.

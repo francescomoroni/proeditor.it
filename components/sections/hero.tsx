@@ -43,7 +43,7 @@ export function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold text-center">
           Il tuo libro chiavi in mano pronto per il grande pubblico
         </h1>
-        <p className="text-xl md:text-4xl text-center ">
+        <p className="text-xl md:text-4xl text-center text-text-primary">
           La tua storia merita di essere raccontata
         </p>
         {/* <p className="text-xl md:text-4xl text-center ">

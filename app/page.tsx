@@ -27,16 +27,9 @@ export default function Home() {
       <Hero />
       <Numbers />
       <AnnouncementBar2 />
-      {/* <Servizi0 />
-      <Servizi1 />
-      <Servizi2 />
-      <Servizi3 />
-      <Servizi4 />
-      <Servizi5 /> */}
       <Services />
       <Portfolio />
       <AnnouncementBar3 />
-      {/* <Statement /> */}
       <ContactForm />
     </div>
   );

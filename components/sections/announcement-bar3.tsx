@@ -6,7 +6,8 @@ export function AnnouncementBar3() {
   return (
     <FadeIn>
       <div className="relative isolate overflow-hidden bg-primary">
-        <div className="px-6 py-12 lg:px-8 lg:py-20">
+        <div className="absolute inset-0 bg-[url('/assets/homepage/hero_books_img.jpg')] bg-cover bg-center blur-md opacity-50"></div>
+        <div className="px-6 py-12 lg:px-8 lg:py-20 relative z-10">
           <div className="mx-auto max-w-2xl text-center space-y-12">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-text-primary sm:text-5xl">
               Pro Editors
@@ -14,11 +15,11 @@ export function AnnouncementBar3() {
             <p className="mx-auto font-bold mt-6 max-w-3xl text-pretty text-lg text-text-primary">
               Leader nel settore dal 2019
             </p>
-            <p className="mx-auto mt-6 max-w-5xl text-pretty text-lg/8 text-text-secondary">
+            <p className="mx-auto mt-6 max-w-5xl text-pretty text-lg/8 text-text-primary">
               Dopo anni di esperienza nel mercato americano e inglese, abbiamo
               deciso di estendere i nostri servizi proponendo qualcosa di mai
-              visto prima sul mercato Italiano. Contattaci per una consulenza
-              gratuita e avere un preventivo sulla base delle tue esigenze. Che
+              visto prima sul mercato Italiano. <strong className="font-bold">Contattaci per una consulenza
+              gratuita </strong>e avere un preventivo sulla base delle tue esigenze. Che
               tu sia un professionista desideroso di affermare la propria figura
               o un autore pronto a lanciare il prossimo best seller, abbiamo la
               soluzione che fa per te.
@@ -33,25 +34,6 @@ export function AnnouncementBar3() {
           </div> */}
           </div>
         </div>
-        <svg
-          viewBox="0 0 1024 1024"
-          aria-hidden="true"
-          className="absolute left-1/2 top-1/2 -z-10 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-        >
-          <circle
-            r={512}
-            cx={512}
-            cy={512}
-            fill="url(#8d958450-c69f-4251-94bc-4e091a323369)"
-            fillOpacity="0.7"
-          />
-          <defs>
-            <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
-              <stop stopColor="#7775D6" />
-              <stop offset={1} stopColor="#E935C1" />
-            </radialGradient>
-          </defs>
-        </svg>
       </div>
     </FadeIn>
   );

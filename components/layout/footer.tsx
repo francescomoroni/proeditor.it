@@ -90,11 +90,11 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-4 border-t border-primary-foreground/20 text-center">
-          <p>
+          <p className="text-text-primary">
             &copy; {new Date().getFullYear()} Pro Editors. Tutti i diritti
             riservati.
           </p>
-          <p>P.Iva 13294140560</p>
+          <p className="text-text-primary">P.Iva 13294140560</p>
         </div>
       </div>
     </footer>

@@ -152,7 +152,7 @@ async function getArticle(slug: string) {
 		pubblicazione di un libro possono essere la mossa vincente per conquistare
 		credibilità e diventare un leader indiscusso nel tuo campo.</span></p>`,
       coverImage: "/articles/1_marketing.png",
-      publishedAt: new Date("2024-03-15"),
+      publishedAt: new Date("2024-01-09"),
     },
     {
       slug: "Come-pubblicare-un-libro-su-Amazon",
@@ -279,7 +279,7 @@ async function getArticle(slug: string) {
         letteraria e massimizzare la visibilità del proprio lavoro. In un mercato editoriale sempre più competitivo,
         Amazon KDP è un&apos;opportunità da non sottovalutare.</span></p>`,
       coverImage: "/articles/2_come-pubblicare.png",
-      publishedAt: new Date("2024-03-15"),
+      publishedAt: new Date("2024-11-20"),
     },
     {
       slug: "Chi-sono-i-ghostwriter",
@@ -443,7 +443,7 @@ async function getArticle(slug: string) {
         processo è la chiave per trasformare i tuoi pensieri in una lettura
         appassionante.</span></p>`,
       coverImage: "/articles/3_chi-sono.png",
-      publishedAt: new Date("2024-03-15"),
+      publishedAt: new Date("2024-07-22"),
     },
     {
       slug: "Come-far-scrivere-il-proprio-libro-da-un-ghostwriter",
@@ -619,7 +619,7 @@ async function getArticle(slug: string) {
         sono le chiavi per trasformare le tue idee in un libro che parli davvero con la
         tua voce.</span></p>`,
       coverImage: "/articles/4_ghostwriter.png",
-      publishedAt: new Date("2024-03-15"),
+      publishedAt: new Date("2024-05-02"),
     },
     {
       slug: "Come-pubblicare-un-libro-da-colorare-su-Amazon",
@@ -782,7 +782,7 @@ async function getArticle(slug: string) {
         e internazionale. Con un tema interessante, un design accurato e un po' di
         promozione, il tuo libro da colorare potrebbe diventare un vero successo!</span></p>`,
       coverImage: "/articles/5_colorare.png",
-      publishedAt: new Date("2024-03-15"),
+      publishedAt: new Date("2024-04-20"),
     },
     {
       slug: "Come-scrivere-un-libro-con-l'intelligenza-artificiale",

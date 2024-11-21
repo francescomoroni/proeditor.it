@@ -38,12 +38,13 @@ export function AnnouncementBar2() {
   return (
     <FadeIn>
       <div className="relative isolate overflow-hidden bg-primary">
-        <div className="px-6 py-12 lg:px-8 lg:py-20">
+        <div className="absolute inset-0 bg-[url('/assets/homepage/hero_books_img.jpg')] bg-cover bg-center blur-md opacity-50"></div>
+        <div className="px-6 py-12 lg:px-8 lg:py-20 relative z-10">
           <div className="mx-auto max-w-2xl text-center space-y-12">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               I libri sono armi potentissime.
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-pretty text-gray-300">
+            <p className="mx-auto mt-6 max-w-xl text-pretty text-text-primary">
               Un libro è per tutti, scrivere un libro non lo è. Affidati a dei
               professionisti per coronare il tuo sogno di diventare scrittore, o
               rilanciare la tua carriera professionale.
@@ -55,32 +56,35 @@ export function AnnouncementBar2() {
               >
                 Richiedi una consulenza gratuita
               </a>
-              {/* <a href="#" className="text-sm/6 font-semibold text-white">
-              Learn more <span aria-hidden="true">→</span>
-            </a> */}
             </div>
           </div>
         </div>
-        <svg
-          viewBox="0 0 1024 1024"
-          aria-hidden="true"
-          className="absolute left-1/2 top-1/2 -z-10 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-        >
-          <circle
-            r={512}
-            cx={512}
-            cy={512}
-            fill="url(#8d958450-c69f-4251-94bc-4e091a323369)"
-            fillOpacity="0.7"
-          />
-          <defs>
-            <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
-              <stop stopColor="#7775D6" />
-              <stop offset={1} stopColor="#E935C1" />
-            </radialGradient>
-          </defs>
-        </svg>
       </div>
     </FadeIn>
   );
 }
+
+
+
+// <svg
+// viewBox="0 0 1024 1024"
+// aria-hidden="true"
+// className="absolute left-1/2 top-1/2 -z-10 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+// >
+// <circle
+//   r={512}
+//   cx={512}
+//   cy={512}
+//   fill="url(#8d958450-c69f-4251-94bc-4e091a323369)"
+//   fillOpacity="0.7"
+// />
+// <defs>
+//   <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
+//   <stop stopColor="#000" />
+//   <stop offset={1} stopColor="#fff" />
+
+//   {/* <stop stopColor="#7775D6" />
+//   <stop offset={1} stopColor="#E935C1" /> */}
+//   </radialGradient>
+// </defs>
+// </svg>

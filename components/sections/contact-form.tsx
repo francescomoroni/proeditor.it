@@ -1,63 +1,23 @@
 "use client";
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent } from "@/components/ui/card";
-import { useToast } from "@/hooks/use-toast";
 import { FadeIn } from "../style/FadeIn";
+import { useForm, ValidationError } from "@formspree/react";
 
 export function ContactForm() {
-  const { toast } = useToast();
-  const [isLoading, setIsLoading] = useState(false);
-
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setIsLoading(true);
-
-    const formData = new FormData(event.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
-    };
-
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) throw new Error();
-
-      toast({
-        title: "Messaggio inviato!",
-        description: "Ti risponderemo il prima possibile.",
-      });
-
-      // Reset form
-      event.currentTarget.reset();
-    } catch (error) {
-      console.error(error);
-      toast({
-        title: "Errore",
-        description: "Si è verificato un errore nell'invio del messaggio.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  }
+  const [state, handleSubmit] = useForm("xjkvoakl")
+  
+  // if (state.succeeded) {
+  //   return <p>Grazie per averci contattato!</p>;
+  // }
 
   return (
     <FadeIn>
-      <section id="contact-form" className="py-16 bg-secondary/10">
+      <section id="contatti" className="py-16 bg-secondary/10">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center pb-12">Contattaci</h2>
           <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -65,12 +25,22 @@ export function ContactForm() {
               <div className="space-y-4">
                 <Input name="name" placeholder="Nome" required />
                 <Input name="email" type="email" placeholder="Email" required />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
                 <Input name="phone" type="tel" placeholder="Telefono" />
                 <Textarea
                   name="message"
                   placeholder="Il tuo messaggio"
                   className="min-h-[150px]"
                   required
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
                 />
               </div>
 
@@ -85,31 +55,47 @@ export function ContactForm() {
                 </label>
               </div>
 
-              <Button
-                type="submit"
-                className="w-full text-white"
-                disabled={isLoading}
-              >
-                {isLoading ? "Invio in corso..." : "Invia Messaggio"}
+              <Button type="submit" className="w-full text-white">
+                Invia Messaggio
               </Button>
             </form>
 
             {/* Info Box */}
             <Card className="hidden md:block">
               <CardContent className="p-6 space-y-4">
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-3xl font-bold text-primary">
                   Benvenuto nella Casa Editrice 3.0
                 </h2>
-                <p className="text-xl text-primary">
+                <p className="text-xl text-text-secondary">
                   Trasforma il tuo manoscritto in un&apos;opera pubblicata
                 </p>
-                <p className="text-primary">
+                <p className="text-text-secondary">
                   Siamo qui per guidarti in ogni fase del processo editoriale,
                   dalla revisione alla pubblicazione.
                 </p>
-                <p className="text-primary">
+                <p className="text-text-secondary">
                   Scrivici e verrai ricontattato al più presto da uno dei nostri
-                  consulenti esperti per una consulenza completamente gratuita.
+                  consulenti esperti per una{" "}
+                  <strong className="font-bold">
+                    consulenza completamente gratuita
+                  </strong>
+                  .
+                </p>
+                <p className="text-text-secondary">
+                  La nostra esperienza nel settore editoriale ci permette di
+                  offrirti un servizio{" "}
+                  <strong className="font-bold">
+                    personalizzato e di alta qualità
+                  </strong>
+                  .
+                </p>
+                <p className="text-text-secondary">
+                  Non esitare a contattarci per qualsiasi domanda o per
+                  discutere le tue idee.
+                </p>
+                <p className="font-bold">
+                  Siamo qui per aiutarti a realizzare il tuo sogno di il tuo
+                  sogno di pubblicazione.
                 </p>
               </CardContent>
             </Card>
