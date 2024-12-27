@@ -1,7 +1,5 @@
-import "./globals.css";
-import { TopBar } from "@/components/layout/top-bar";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
+import "./globals.css"; 
+import ClientLayoutWrapper from "@/app/client-layout-wrapper"
 
 export const metadata = {
   title: "Pro Editors",
@@ -16,10 +14,9 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning>
       <body>
-        <TopBar />
-        <Navbar />
-        {children}
-        <Footer />
+        <ClientLayoutWrapper>
+          {children}
+        </ClientLayoutWrapper>
       </body>
     </html>
   );
